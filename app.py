@@ -54,10 +54,10 @@ def run_script(script_name):
     if script_path:
         try:
             result = subprocess.run(
-                [r"D:\Users\Luca\Desktop\MobiusStripProj\.venv\Scripts\python.exe", script_path],
-                capture_output=True,
-                text=True
-            )
+    ["python", script_path],
+    capture_output=True,
+    text=True
+)
             return result.stdout if result.returncode == 0 else result.stderr
         except Exception as e:
             return str(e)
