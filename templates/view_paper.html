@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>View Paper</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="paper-content">
+      <h1>Exploring Möbius Strip</h1>
+      <iframe
+        src="{{ url_for('static', filename='documents/Exploring_Möbius_Strip.pdf') }}"
+        width="100%"
+        height="700px"
+        frameborder="0"
+      ></iframe>
+      <a href="/download_paper" class="button">Download Paper as .docx</a>
+    </div>
+  </body>
+</html>

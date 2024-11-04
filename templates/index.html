@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Möbius Strip Project</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="center-wrapper">
+      <div class="container">
+        <h1>Möbius Strip Project</h1>
+        <a href="/view_paper" class="button">View Paper</a>
+        <a href="/download_paper" class="button">Download Paper</a>
+        <a href="{{ url_for('view_code') }}" class="button">View Code</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Made by Luca Dumitru © 2024</p>
+    </footer>
+  </body>
+</html>
